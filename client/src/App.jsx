@@ -4,7 +4,7 @@ import { Landing, Login, Signup, Home } from "./views"
 import { AuthProvider } from "./context/AuthContex"
 import { CharProvider } from "./context/CharacterContext"
 import ProtectedRoute from "./protectedRoute"
-import Nav from "./component/nav/Nav"
+import Nav from "./component/nav/navGral/Nav"
 
 function App() {
 

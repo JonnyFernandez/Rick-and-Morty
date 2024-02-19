@@ -1,0 +1,39 @@
+.navHome {
+    background-color: red;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    /* Agrega esta línea para fijar el componente */
+    top: 0;
+    /* Fija el componente en la parte superior de la ventana */
+    left: 0;
+    /* Fija el componente en el borde izquierdo de la ventana */
+    z-index: 1000;
+    /* Ajusta el z-index si es necesario para superponer otros elementos */
+}
+
+
+.logo {
+    background-color: red;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(12px, 4vw, 32px);
+}
+
+.botonera {
+    background-color: blue;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}

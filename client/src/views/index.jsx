@@ -1,7 +1,8 @@
-import Landing from "./Landing";
-import Login from "./Login";
-import Signup from "./SignUp";
-import Home from "./Home";
+
+import Landing from "./landing/Landing";
+import Login from "./login/Login";
+import Signup from "./signup/SignUp";
+import Home from "./home/Home";
 
 
 export { Landing, Login, Signup, Home }

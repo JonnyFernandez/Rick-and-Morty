@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 
 import { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom'
-import { useAuth } from '../context/AuthContex';
+import { useAuth } from '../../context/AuthContex';
 
 const LoginPage = () => {
     const navigate = useNavigate()

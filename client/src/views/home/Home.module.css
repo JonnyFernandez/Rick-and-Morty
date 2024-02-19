@@ -1,0 +1,5 @@
+body {
+    margin-top: 60px;
+    /* Ajusta el margen superior para dejar espacio para el componente flotante */
+    background-color: rgb(48, 63, 63);
+}
