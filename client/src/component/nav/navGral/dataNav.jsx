@@ -6,13 +6,13 @@ export const dataNavbar = [
         path: "/home",
         icon: <RiHome4Line size="30" />,
     },
+    // {
+    //     name: "fav",
+    //     path: "/profile",
+    //     icon: <RiAccountPinCircleLine size="30" />,
+    // },
     {
-        name: "profile",
-        path: "/profile",
-        icon: <RiAccountPinCircleLine size="30" />,
-    },
-    {
-        name: "paginate",
+        name: "createChar",
         path: "/paginate",
         icon: <RiServerLine size="30" />,
     },
@@ -22,18 +22,14 @@ export const dataNavbar = [
         icon: <RiBriefcase2Line size="30" />,
     },
     {
-        name: "my chars",
+        name: "myChars",
         path: "/chars",
         icon: <RiChatPollLine size="30" />,
     },
     {
-        name: "my fav",
+        name: "myFav",
         path: "/fav",
         icon: <RiChatPollLine size="30" />,
     },
-    {
-        name: "add",
-        path: "/add-chard",
-        icon: <RiChatPollLine size="30" />,
-    },
+
 ];
