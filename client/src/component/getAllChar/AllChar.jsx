@@ -3,6 +3,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getAllChars } from "../../redux/charSlice";
 import a from './AllChar.module.css'
+import Search from '../search/Search'
+
+
 
 const AllChar = () => {
 
@@ -25,8 +28,30 @@ const AllChar = () => {
 
 
     return (
-        <div>
-            All chars
+        <div className={a.char}>
+            <Search />
+            <div className={a.container} >
+                <h1 >hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+                <h1>hola mundo</h1>
+            </div>
         </div>
     )
 }
