@@ -16,6 +16,7 @@ const Nav = ({ selector }) => {
             <button className="text-black py-2 md:px-4 md:py-0 md:mx-2 text-center hover:bg-gray-200 md:hover:bg-transparent md:hover:text-black" value={"random"} onClick={(e) => selector(e.target.value)}>Random</button>
             <button className="text-black py-2 md:px-4 md:py-0 md:mx-2 text-center hover:bg-gray-200 md:hover:bg-transparent md:hover:text-black" value={"myChars"} onClick={(e) => selector(e.target.value)}>MyChars</button>
             <button className="text-black py-2 md:px-4 md:py-0 md:mx-2 text-center hover:bg-gray-200 md:hover:bg-transparent md:hover:text-black" value={"create"} onClick={(e) => selector(e.target.value)}>Create</button>
+            <button className="text-black py-2 md:px-4 md:py-0 md:mx-2 text-center hover:bg-gray-200 md:hover:bg-transparent md:hover:text-black" value={"create"} onClick={(e) => selector(e.target.value)}>Perfil</button>
 
         </nav >
     );
