@@ -30,7 +30,7 @@ module.exports = {
 
         } else {
             const arr = []
-            for (let i = 1; i < 6; i++) {
+            for (let i = 1; i < 41; i++) {
                 const info = await axios(`https://rickandmortyapi.com/api/character/?page=${i}`)
                 arr.push(info.data.results);
             }

@@ -31,26 +31,9 @@ const AllChar = () => {
         <div className={a.char}>
             <Search />
             <div className={a.container} >
-                <h1 >hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
-                <h1>hola mundo</h1>
+                {
+                    chars && chars.map(item => <h1>{item.name}</h1>)
+                }
             </div>
         </div>
     )

@@ -15,7 +15,12 @@ const Home = () => {
     const [showCreate, setShowCreate] = useState(false)
 
     useEffect(() => {
-        setShowAll(true)
+        setShowAll(true);
+        setShowMyChars(false);
+        setShowPaginate(false);
+        setShowRandom(false);
+        setShowFavs(false);
+        setShowCreate(false);
     }, [])
 
     const selector = (selected) => {
@@ -60,6 +65,14 @@ const Home = () => {
                 setShowFavs(false);
                 setShowCreate(true);
                 break;
+            case "paginate":
+                setShowAll(false);
+                setShowMyChars(false);
+                setShowPaginate(true);
+                setShowRandom(false);
+                setShowFavs(false);
+                setShowCreate(false);
+                break;
             default:
                 break;
         }
@@ -77,10 +90,10 @@ const Home = () => {
                 <div className={h.container}>
                     <div className={h.divRight}>
                         {showAll && <AllChar />}
-                        {showFavs && <All_Fav />}
-                        {showMyChars && <MyChars />}
                         {showPaginate && <Paginate />}
+                        {showFavs && <All_Fav />}
                         {showRamdon && <Random_Chars />}
+                        {showMyChars && <MyChars />}
                         {showCreate && <CreateChar />}
                     </div>
                 </div>
