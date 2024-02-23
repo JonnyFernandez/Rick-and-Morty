@@ -77,11 +77,6 @@ const Home = () => {
                 break;
         }
     }
-
-
-
-
-
     return (
         <div className="home">
             <NavUp />

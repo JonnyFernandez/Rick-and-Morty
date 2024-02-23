@@ -27,26 +27,9 @@ const Paginate = () => {
         <div className={p.char}>
 
             <div className={p.container} >
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
-                <h1>hola paginado</h1>
+                {
+                    chars && chars.map(item => <h1>paginate:{item.name}</h1>)
+                }
             </div>
         </div>
     )

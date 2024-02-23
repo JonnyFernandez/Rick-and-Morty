@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { getAllChars } from "../../redux/charSlice";
 import a from './AllChar.module.css'
 import Search from '../search/Search'
-
+import Card from "../card/Card";
 
 
 const AllChar = () => {
@@ -32,7 +32,7 @@ const AllChar = () => {
             <Search />
             <div className={a.container} >
                 {
-                    chars && chars.map(item => <h1>{item.name}</h1>)
+                    chars && chars.map((item, index) => <div key={index}><Card name={item.name} image={item.image} /></div>)
                 }
             </div>
         </div>
