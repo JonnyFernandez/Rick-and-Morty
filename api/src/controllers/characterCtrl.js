@@ -47,7 +47,7 @@ module.exports = {
                     image: item.image,
                     user: item.user ? item.user._id : null
                 }
-            });
+            })
         }
     },
     getChar_by_id: async (id, userId) => {
