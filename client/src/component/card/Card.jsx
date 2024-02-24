@@ -26,11 +26,15 @@ const Card = ({ id, name, status, species, gender, origin, image, code, user }) 
 
 
     return (
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden h-auto md:h-80">
+
             <img className="w-full h-auto hover:scale-105 transition duration-300" src={image} alt={name} />
             <div className="p-4">
-                <div className="font-bold text-sm mb-2 text-black">{name}</div>
-                <div className="flex justify-center">
+                <div className="font-bold text-sm mb-2 text-black overflow-hidden whitespace-nowrap md:max-w-xs">
+                    {name}
+                </div>
+
+                <div className="flex justify-center mt-4">
                     {/* Botón de favoritos */}
                     <button onClick={handleFavorite} className={`bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-flex items-center ${styles.favoriteButton}`}>
                         {
@@ -42,14 +46,18 @@ const Card = ({ id, name, status, species, gender, origin, image, code, user }) 
                     </button>
 
                     {
-                        user ? <div><button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
-                            <RiPencilLine className="w-4 h-4 mr-2 ml-2" />
-                        </button>
-
-                            <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
-                                <RiDeleteBinLine className="w-4 h-4 mr-2" />
-                            </button></div> : ''
+                        user ?
+                            <div>
+                                (<button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                                    <RiPencilLine className="w-4 h-4 mr-2 ml-2" />
+                                </button>)
+                                (<button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                                    <RiDeleteBinLine className="w-4 h-4 mr-2" />
+                                </button>)
+                            </div>
+                            : ''
                     }
+
 
                 </div>
             </div>
