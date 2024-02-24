@@ -3,9 +3,18 @@ import h from './Home.module.css'
 import { AllChar, All_Fav, CreateChar, MyChars, Paginate, Random_Chars } from "../../component";
 import { useEffect, useState } from "react";
 import Nav from '../../component/nav/navGral/Nav'
-
+import { setFavItems } from "../../redux/charSlice";
+import { useDispatch } from "react-redux";
 
 const Home = () => {
+    const dispatch = useDispatch()
+
+
+    useEffect(() => {
+        const storedFav = JSON.parse(localStorage.getItem('fav')) || [];
+
+        dispatch(setFavItems(storedFav))
+    }, [dispatch])
 
     const [showAll, setShowAll] = useState(false)
     const [showMyChars, setShowMyChars] = useState(false)

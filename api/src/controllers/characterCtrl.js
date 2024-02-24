@@ -30,7 +30,7 @@ module.exports = {
 
         } else {
             const arr = []
-            for (let i = 1; i < 6; i++) {
+            for (let i = 1; i < 41; i++) {
                 const info = await axios(`https://rickandmortyapi.com/api/character/?page=${i}`)
                 arr.push(info.data.results);
             }
@@ -47,7 +47,7 @@ module.exports = {
                     image: item.image,
                     user: item.user ? item.user._id : null
                 }
-            })
+            });
         }
     },
     getChar_by_id: async (id, userId) => {
@@ -207,9 +207,9 @@ module.exports = {
     },
     fav: async (name, status, species, gender, origin, image, code, user) => {
 
-        const favFound = await Fav.findOne({ code });
+        // const favFound = await Fav.findOne({ code });
 
-        if (favFound) throw new Error("character is already a favorite")
+        // if (favFound) throw new Error("character is already a favorite")
         const newFav = new Fav({ name, status, species, gender, origin, image, code, user })
         const saveFav = await newFav.save()
         return saveFav;

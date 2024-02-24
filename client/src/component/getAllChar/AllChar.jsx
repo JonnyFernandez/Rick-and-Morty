@@ -32,7 +32,19 @@ const AllChar = () => {
             <Search />
             <div className={a.container} >
                 {
-                    chars && chars.map((item, index) => <div key={index}><Card name={item.name} image={item.image} /></div>)
+                    chars && chars.map((item, index) =>
+                        <div key={index}>
+                            <Card
+                                id={item.id}
+                                name={item.name}
+                                status={item.status}
+                                species={item.species}
+                                gender={item.gender}
+                                origin={item.origin}
+                                image={item.image}
+                                code={item.id}
+                                user={item.user} />
+                        </div>)
                 }
             </div>
         </div>

@@ -19,3 +19,12 @@ export const allChar = async () => {
     }
 
 }
+export const createFav = async (data) => {
+    try {
+        let res = await axios.post('/fav', data)
+        return res
+    } catch (error) {
+        console.log(error);
+    }
+
+}

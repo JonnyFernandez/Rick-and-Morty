@@ -11,19 +11,19 @@ const favSchema = new mongoose.Schema({
         type: String,
         require: true,
         trim: true,
-        enum: ['Vivo', 'Muerto', 'Unknow']
+        // enum: ['Dead', 'Muerto', 'Unknow']
     },
     species: {
         type: String,
         require: true,
         trim: true,
-        enum: ['Humano', 'Alien', 'Robot'],
+        // enum: ['Humano', 'Alien', 'Robot'],
     },
 
     gender: {
         type: String,
         require: true,
-        enum: ['Male', 'Female', 'Unknow'],
+        // enum: ['Male', 'Female', 'Unknow'],
     },
     origin: {
         type: String,
